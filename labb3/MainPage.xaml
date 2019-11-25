@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage Padding="20"  xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="labb3.MainPage">
+    <StackLayout>
+      <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+          <Label Text="Inmatat Belopp:"/>
+          <Label x:Name="amountOutput" Text="" HorizontalOptions="Center"/>
+        </StackLayout>
+      <StackLayout Margin="0,20,0,0" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+          <Label Text="Momssats"/>
+          <Label x:Name="vat" Text="" HorizontalOptions="Center"/>
+      </StackLayout>
+      <StackLayout Margin="0,20,0,0" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+          <Label Text="Uträknat Belopp:"/>
+          <Label x:Name="calculatedAmount" Text="" HorizontalOptions="Center"/>
+      </StackLayout>
+      <StackLayout Margin="0,20,0,0" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+          <Label Text="Uträknad Moms:"/>
+          <Label x:Name="calculatedVat" Text="" HorizontalOptions="Center"/>
+      </StackLayout>
+        <StackLayout Margin="0,20,0,0" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+          <Entry Keyboard="Numeric" x:Name="amount" Placeholder="Ange belopp inkusive moms"></Entry>
+      </StackLayout>
+        <StackLayout>
+            <Button Clicked="buttonClick" Margin="0,8,0,0" Text="8%"></Button>
+            <Button Clicked="buttonClick" Margin="0,8,0,0" Text="12%"></Button>
+            <Button Clicked="buttonClick" Margin="0,8,0,0" Text="25%"></Button>
+        </StackLayout>
+  </StackLayout>   
+</ContentPage>
